@@ -236,6 +236,11 @@ margin-bottom: 10px;
     width: 50%;
     position: relative;
 }
+.awards-item .item .text h3{
+   @media (max-width:768px) {
+        display: none;
+   }
+}
 .awards .text h2{
     font-size: 20px;
     
@@ -246,7 +251,6 @@ margin-bottom: 10px;
 }
 .awards .text .btn{
     text-decoration: none;
-
     position: absolute;
     padding: 0 5px;
     bottom: 5px;
@@ -267,6 +271,7 @@ margin-bottom: 10px;
     }
     .awards .pic img{
         width: 100%;
+        height: 100%;
         vertical-align: bottom;
         object-fit: cover;
     }
@@ -409,6 +414,12 @@ margin-bottom: 10px;
 }
 .nba-player .item .text h3{
     font-size: 28px;
+    @media (max-width:576px) {
+        font-size: 24px;
+    }
+    @media (max-width:400px) {
+        font-size: 20px;
+    }
 }
 .nba-player .item .text h3::after{
     content: '';
